@@ -1,0 +1,416 @@
+/* to make page a flexible box */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  background-color: black;
+} 
+/*flexbox to display header*/
+.flexb{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.flexbitem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:100%;
+}
+
+/* for image and text alignment*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    padding:0 50px;
+
+}
+
+/*for image*/
+.left{
+    display:flex;
+    flex:100%;
+    flex-direction: column;
+    margin-top:15px;
+}
+
+.left img{
+    width:100%;
+}
+
+/*for about section*/
+.about{
+    flex:100%;
+    color:#eef1f3;
+    margin-top:30px;
+}
+
+/* for cv*/
+#cv{
+    color:#eef1f3;
+    text-justify: auto;
+    margin-left:50px;
+    margin-top:30px;
+}
+
+a.bts:link{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.bts:visited{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.bts:active{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.bts:hover{
+    color: #eef1f3;
+    text-decoration: none;
+}
+/* for nav menu (about etc)*/
+a.nav:link{
+    color:#bfc0c0;
+    text-decoration: none;
+}
+a.nav:active{
+    color:#eef1f3;
+    text-decoration: none;
+}
+a.nav:visited{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.nav:hover{
+    color:#eef1f3;
+    text-decoration: none;
+}
+
+.dropbtn{
+    color:#bfc0c0;
+    border:none;
+}
+
+.dropd{
+    color:#bfc0c0;
+    position: relative;
+    display: inline-block;
+}
+
+.dcontent{
+    color:#bfc0c0;
+    display: none;
+  position: absolute;
+}
+
+.dcontent a{
+  width: 150px;
+  color:#bfc0c0;
+  padding:3px 11px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn:hover {
+    color:#eef1f3;
+}
+
+.dropd:hover .dcontent{
+    display:block;
+
+}
+
+.dcontent> a:hover{
+    color:#eef1f3;
+}
+
+/*for logo */
+.icon {
+    height:90px;
+    width:180px;
+    margin-left:30px;
+    margin-top:40px; 
+    float:left;
+}
+/*logo ends*/
+
+.des{
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:#0d1321;
+    background-color:  #eef1f3;
+    padding-right:5px;
+    }
+    
+    .footer a{
+        color:black;
+        text-decoration: none;
+    
+    }
+    
+    .footer,.fchild,ul,li{
+        background-color: #eef1f3;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top:29px;
+        display:flex;
+        flex:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fchild {
+        padding-top: 21px;
+        list-style-type: none;
+    }
+    
+    ul{
+        font-size: 15px;
+        text-align: center;
+        color:#0d1321;
+        font-weight: bold;
+    }
+    
+    li{
+        font-size: 15px;
+    }
+ 
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for tablet screens*/
+
+@media screen and (min-width:600px){
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+ /*flexbox to display header*/
+.flexb{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+    width:100%;
+}
+
+.flexbitem{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+}
+
+/* for image and text alignment*/
+.flex{
+    display: flex;
+    flex:100%;
+    flex-wrap: wrap;
+    padding:0 21px;
+
+}
+
+/*for image*/
+.left{
+    display:flex;
+    flex:50%;
+    flex-direction: column;
+    margin-top:150px;
+}
+
+.left img{
+    width:100%;
+}
+
+/*for about section*/
+.about{
+    text-justify: auto;
+    flex:50%;
+    padding: 0 21px;
+    color:#eef1f3;
+}
+
+/* for cv*/
+#cv{
+    color:#eef1f3;
+    text-justify: auto;
+    margin-left:50px;
+    margin-top:70px;
+}
+
+    .des{
+        display:flex;
+        flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:#0d1321;
+    background-color:  #eef1f3;
+    padding-right:5px;
+    }
+    
+    .footer a{
+        color:black;
+        text-decoration: none;
+    
+    }
+    
+    .footer,.fchild,ul,li{
+        background-color: #eef1f3;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top:29px;
+        display:flex;
+        flex:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fchild {
+        padding-top: 21px;
+        list-style-type: none;
+    }
+    
+    ul{
+        font-size: 15px;
+        text-align: center;
+        color:#0d1321;
+        font-weight: bold;
+    }
+    
+    li{
+        font-size: 15px;
+    }
+    
+
+    }
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for laptop screens*/
+    
+@media screen and (min-width:768px){   
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    /*flexbox to display header*/
+    .flexb{
+        display: flex;
+        flex-wrap:wrap;
+   }
+    
+    .flexbitem{
+        padding-right: 29px;
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        flex:50%;
+        
+    }
+
+    .logo{
+        padding-left:29px;
+        margin-right: auto;
+
+    }
+
+    .dropd{
+        margin-left:auto;
+    }
+
+/* for image and text alignment*/
+.flex{
+    display: flex;
+    flex:50%;
+    flex-wrap: wrap;
+    padding:0 250px;
+
+}
+
+/*for image*/
+.left{
+    display:flex;
+    flex:50%;
+    flex-direction: column;
+    margin-top:70px;
+}
+
+.left img{
+    width:100%;
+}
+
+/*for about section*/
+.about{
+    text-justify: auto;
+    flex:50%;
+    color:#eef1f3;
+}
+
+/* for cv*/
+#cv{
+    color:#eef1f3;
+    text-justify: auto;
+    margin-left:50px;
+    margin-top:222px;
+}
+    
+    .des{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: right;
+        color:#0d1321;
+        background-color:  #eef1f3;
+        padding-right:5px;
+        }
+        
+        .footer a{
+            color:black;
+            text-decoration: none;
+        
+        }
+
+        .footer,.fchild,ul,li{
+            background-color: #eef1f3;
+        }
+        .footer{
+            flex-direction: row;
+            padding-top:29px;
+            display:flex;
+            flex:33.3%;
+
+        }
+        
+        .fchild {
+            align-items: center;
+            display:flex;
+            flex-direction:column;
+            flex:33.3%;
+            padding:0 110;
+            list-style-type: none;
+        }
+        
+        ul{
+            font-size: 15px;
+            text-align: left;
+            color:#0d1321;
+            font-weight: bold;
+        }
+        
+        li{
+            font-size: 15px;
+        }
+        
+
+    }

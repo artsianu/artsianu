@@ -1,0 +1,33 @@
+<doctype html!>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- character set used-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to scale according to the device-->
+	<meta http-equiv="refresh" content="30"> <!-- refreshing page every 30 seconds-->
+	<title> Anushka Jain </title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Passions Conflict' rel='stylesheet'>
+    <link rel="stylesheet" href="ssindex.css">
+    </head>
+
+    <title>Anushka Jain</title>
+    
+    <body>
+    <div id="bg">
+        <a href="index.html" target="_self"> <img src="C:/Users/anush/OneDrive/Documents/html/artworks/icon.png" class="icon" alt="Anushka Jain"> </a>
+        <div class="name">
+            <a href="index.html" target="_self">Anushka</a>
+        </div>
+        <div class="sname">
+            <a href="index.html" target="_self">Jain</a>
+        </div>
+       <button id="explore" onclick="window.open('work.html','_self')"> explore</button>
+    </body>
+
+<!-- to add an element of explore after 10 seconds-->
+    <script>
+    const ex= document.getElementById('explore');
+setTimeout(()=> {
+  ex.style.visibility='visible';}, 700);
+    </script>
+</html>
